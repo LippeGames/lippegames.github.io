@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sarrafo &middot; baixar</title>
+<meta name="description" content="Sarrafo: arena de 20 lutadores. Baixe a versao de teste para Android.">
+
+<!--
+  A pagina de download do Sarrafo.
+  A copia que vale esta no repositorio LippeGames/lippegames.github.io, em
+  /sarrafo/. Esta aqui dentro do projeto e so a fonte, para nao se perder.
+
+  O APK NAO fica no Git: ele e anexo de release, que o GitHub guarda fora do
+  historico. Se fosse commitado, cada versao somaria ~50 MB permanentes ao
+  repositorio do site, e historico de Git nao esquece.
+
+  O link aponta para a TAG (sarrafo-v0.1), nunca para "latest": o repositorio
+  do site guarda as releases de todos os jogos, entao "latest" muda de dono
+  quando qualquer outro jogo publica uma versao nova.
+-->
+
+<style>
+  :root {
+    --fundo: #121213;
+    --caixa: #1c1c1f;
+    --dourado: #f2cc4d;
+    --azul: #2c59b8;
+    --texto: #ffffff;
+    --texto-fraco: #9c9c9e;
+    --contorno: #3a3a3c;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 32px 16px 56px;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  main { width: 100%; max-width: 440px; }
+
+  h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin: 0 0 4px;
+    text-align: center;
+    color: var(--dourado);
+  }
+
+  .subtitulo {
+    color: var(--texto-fraco);
+    text-align: center;
+    margin: 0 0 28px;
+    font-size: 16px;
+  }
+
+  .baixar {
+    display: block;
+    background: var(--azul);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 19px;
+    text-align: center;
+    padding: 18px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--dourado);
+    margin-bottom: 10px;
+  }
+
+  .baixar:active { transform: translateY(1px); }
+
+  .tamanho {
+    color: var(--texto-fraco);
+    font-size: 13px;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+
+  h2 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--dourado);
+    margin: 28px 0 10px;
+  }
+
+  ol, ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 8px; line-height: 1.45; }
+
+  .aviso {
+    background: var(--caixa);
+    border: 1px solid var(--contorno);
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: var(--texto-fraco);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 26px;
+  }
+
+  .voltar {
+    display: block;
+    text-align: center;
+    margin-top: 32px;
+    color: var(--texto-fraco);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>SARRAFO</h1>
+  <p class="subtitulo">arena de 20 lutadores &middot; versao de teste</p>
+
+  <a class="baixar" id="link"
+     href="https://github.com/LippeGames/lippegames.github.io/releases/download/sarrafo-v0.1/Sarrafo.apk">
+    BAIXAR PARA ANDROID
+  </a>
+  <p class="tamanho">APK, cerca de 50 MB</p>
+
+  <h2>Como instalar</h2>
+  <ol>
+    <li>Toque no botao acima <strong>pelo proprio celular</strong>.</li>
+    <li>Quando terminar de baixar, toque no arquivo.</li>
+    <li>O Android vai perguntar se pode instalar aplicativo de fora da loja.
+        Aceite: o jogo ainda nao esta na Play Store.</li>
+  </ol>
+
+  <h2>O que e</h2>
+  <p style="line-height:1.5;margin:0">
+    Arena redonda vista de cima. Voce e mais 19 lutadores numa briga sem fim:
+    voce morre, volta em 3 segundos, e <strong>cada abate sobe um nivel</strong>.
+    Nivel alto significa mais vida, mais dano e corpo maior — da para ver de
+    longe quem esta perigoso, e por isso o lider vira alvo de todo mundo.
+    Morrer zera o nivel. Partida de 3 minutos.
+  </p>
+
+  <h2>Nesta versao</h2>
+  <ul>
+    <li>Guardian de espada, com golpe e animacao</li>
+    <li>Arena com borda marcada, aneis de distancia e colunas em volta</li>
+    <li>A tela inteira e o direcional; bater e automatico</li>
+    <li>Nome de jogador editavel, e duas moedas (token e gold)</li>
+    <li>Premio por colocacao no fim da partida, e botao de jogar de novo</li>
+    <li>Musica, som de golpe e vibracao, com controles de volume</li>
+  </ul>
+
+  <p class="aviso">
+    <strong>Aviso.</strong> Esta versao esta assinada com uma chave de teste.
+    Quando o jogo entrar na Play Store a assinatura muda, e quem tiver esta
+    versao instalada vai precisar desinstalar antes de por a nova.
+  </p>
+
+  <a class="voltar" href="../">&larr; Lippe Games</a>
+</main>
+</body>
+</html>
