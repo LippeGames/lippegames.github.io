@@ -101,6 +101,17 @@
 
   .botao:active { filter: brightness(0.85); }
 
+  /* O de baixar e o caminho de quem ainda nao tem o jogo: existe, mas nao
+     disputa atencao com o de abrir o desafio. */
+  .botao.secundario {
+    background: transparent;
+    border: 2px solid var(--verde);
+    color: var(--verde);
+    font-size: 17px;
+    padding: 14px 18px;
+    margin-bottom: 4px;
+  }
+
   .caixa {
     background: var(--caixa);
     border: 1px solid var(--contorno);
@@ -171,8 +182,12 @@
 
   <div class="caixa">
     <h2>Ainda nao tem o jogo?</h2>
-    <p>O Milim esta em testes e ainda nao chegou na Play Store. Peca o arquivo
-       de instalacao para quem te mandou o desafio.</p>
+    <a class="botao secundario"
+       href="https://github.com/LippeGames/lippegames.github.io/releases/latest/download/Milim.apk">
+       BAIXAR O MILIM</a>
+    <p>O jogo ainda nao chegou na Play Store, entao o download vem daqui mesmo.
+       Depois de baixar, toque no arquivo e aceite instalar - o Android pergunta
+       porque o aplicativo nao veio da loja.</p>
   </div>
 
   <footer>Milim &middot; jogo de palavras em portugues</footer>
