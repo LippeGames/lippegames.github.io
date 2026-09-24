@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Desafio do Milim</title>
+<meta name="description" content="Um amigo te desafiou a descobrir a palavra no Milim.">
+
+<!--
+  A pagina que recebe o link do desafio.
+
+  Quem tem o Milim instalado quase nunca chega a ver isto: o Android reconhece
+  o endereco e abre o jogo direto. Esta pagina e a rede de seguranca para os
+  outros casos - jogo nao instalado, computador, ou aparelho que nao conferiu
+  o endereco - e para eles ela faz tres coisas:
+
+    1. tenta o atalho interno `milim://`, que abre o jogo mesmo sem a conferencia;
+    2. mostra um botao para tentar de novo, se a primeira tentativa nao pegar;
+    3. mostra o codigo por extenso, para colar dentro do jogo na mao.
+
+  O codigo viaja no endereco como `?d=XFTRQ`. Ele nao entrega a palavra: e a
+  palavra cifrada, a mesma coisa que o jogo manda no WhatsApp.
+-->
+
+<style>
+  :root {
+    --fundo: #121213;
+    --caixa: #1e1e20;
+    --verde: #538d4e;
+    --amarelo: #b59f3b;
+    --texto: #ffffff;
+    --texto-fraco: #9c9c9e;
+    --contorno: #3a3a3c;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 32px 16px 48px;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  main { width: 100%; max-width: 420px; }
+
+  h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 0 0 4px;
+  }
+
+  .subtitulo {
+    color: var(--texto-fraco);
+    margin: 0 0 28px;
+    font-size: 16px;
+  }
+
+  /* Os quadradinhos do jogo, so de enfeite. */
+  .quadrados {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 28px;
+  }
+
+  .quadrados span {
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    border: 2px solid var(--contorno);
+  }
+
+  .quadrados .certo { background: var(--verde); border-color: var(--verde); }
+  .quadrados .quase { background: var(--amarelo); border-color: var(--amarelo); }
+
+  .chamada {
+    font-size: 19px;
+    line-height: 1.5;
+    margin: 0 0 24px;
+  }
+
+  .botao {
+    display: block;
+    background: var(--verde);
+    color: var(--texto);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 18px 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+
+  .botao:active { filter: brightness(0.85); }
+
+  .caixa {
+    background: var(--caixa);
+    border: 1px solid var(--contorno);
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 18px;
+  }
+
+  .caixa h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--texto-fraco);
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+
+  .codigo {
+    font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--amarelo);
+    word-break: break-all;
+    margin: 0;
+  }
+
+  .caixa p { margin: 10px 0 0; color: var(--texto-fraco); font-size: 15px; line-height: 1.5; }
+
+  footer { color: var(--texto-fraco); font-size: 13px; margin-top: 8px; }
+
+  .escondido { display: none; }
+</style>
+</head>
+
+<body>
+<main>
+  <h1>MILIM</h1>
+  <p class="subtitulo">jogo de descobrir palavras</p>
+
+  <div class="quadrados" aria-hidden="true">
+    <span class="certo"></span>
+    <span></span>
+    <span class="quase"></span>
+    <span></span>
+    <span class="certo"></span>
+  </div>
+
+  <div id="com-desafio" class="escondido">
+    <p class="chamada">Um amigo te desafiou a descobrir a palavra dele.</p>
+
+    <a id="abrir" class="botao" href="#">ABRIR NO MILIM</a>
+
+    <div class="caixa">
+      <h2>Ou cole este codigo no jogo</h2>
+      <p class="codigo" id="codigo"></p>
+      <p>Abra o Milim, toque em JOGAR e cole o codigo em DESAFIO DE UM AMIGO.</p>
+    </div>
+  </div>
+
+  <div id="sem-desafio" class="escondido">
+    <p class="chamada">Este link nao trouxe nenhum desafio.</p>
+    <div class="caixa">
+      <p>Peca para o seu amigo mandar o link de novo, inteiro. O WhatsApp as
+         vezes corta o endereco quando ele vem junto com outro texto.</p>
+    </div>
+  </div>
+
+  <div class="caixa">
+    <h2>Ainda nao tem o jogo?</h2>
+    <p>O Milim esta em testes e ainda nao chegou na Play Store. Peca o arquivo
+       de instalacao para quem te mandou o desafio.</p>
+  </div>
+
+  <footer>Milim &middot; jogo de palavras em portugues</footer>
+</main>
+
+<script>
+(function () {
+  // O codigo so tem letras de A a Z. Limpar antes de usar evita que qualquer
+  // coisa colada no endereco vire parte do link do aplicativo.
+  var parametros = new URLSearchParams(window.location.search);
+  var codigo = (parametros.get('d') || '').toUpperCase().replace(/[^A-Z]/g, '');
+
+  var comDesafio = document.getElementById('com-desafio');
+  var semDesafio = document.getElementById('sem-desafio');
+
+  if (!codigo) {
+    semDesafio.classList.remove('escondido');
+    return;
+  }
+
+  var atalho = 'milim://d/' + codigo;
+
+  document.getElementById('codigo').textContent = 'MILIM-' + codigo;
+  document.getElementById('abrir').href = atalho;
+  comDesafio.classList.remove('escondido');
+
+  // Tenta abrir o jogo sozinho. Quem chegou ate aqui ou nao tem o jogo, ou
+  // tem mas o aparelho nao conferiu o endereco - e neste segundo caso o
+  // atalho resolve. Se nao houver aplicativo para atender, o navegador
+  // simplesmente ignora e a pagina continua na tela.
+  window.setTimeout(function () {
+    window.location.href = atalho;
+  }, 400);
+})();
+</script>
+</body>
+</html>

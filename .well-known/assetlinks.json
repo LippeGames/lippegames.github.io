@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.PhilippeGames.Milim",
+      "sha256_cert_fingerprints": [
+        "5E:74:86:A2:36:60:C6:78:0E:A5:A8:58:4B:B9:18:79:38:6F:BA:45:42:DE:BA:26:83:A1:15:BE:65:21:04:08"
+      ]
+    }
+  }
+]
