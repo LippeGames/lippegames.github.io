@@ -1,5 +1,6 @@
 {
-  "versao": "1.2",
+  "versao": "1.3",
   "pagina": "https://lippegames.github.io/milim/",
-  "novidades": "Agora o jogo tem som: a tecla, o acerto, o erro e o fim da partida. Da para ajustar o volume separado da musica."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v1.3/Milim.apk",
+  "novidades": "A versao aparece no canto do lobby, com o andamento da procura por atualizacao ao lado."
 }
