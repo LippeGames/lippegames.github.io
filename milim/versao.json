@@ -1,6 +1,6 @@
 {
-  "versao": "1.4",
-  "pagina": "https://lippegames.github.io/milim/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v1.4/Milim.apk",
-  "novidades": "Jogar em equipe: crie um grupo, chame os amigos e veja quem foi melhor na palavra de hoje. Da para mandar um desafio para o grupo inteiro e abrir uma corrida, todos na mesma palavra ao mesmo tempo. Nos ajustes, um botao de mudo para os sons do jogo."
+  "versao": "1.5",
+  "pagina": "https://lippegames.github.io/",
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v1.5/Milim.apk",
+  "novidades": "O botao de baixar a atualizacao estava abrindo o proprio jogo em vez do navegador. Agora ele baixa o arquivo direto."
 }

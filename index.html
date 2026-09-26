@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lippe Games</title>
+<!--
+  Esta pagina e tambem para onde o proprio jogo manda quem toca em BAIXAR
+  AGORA. Ela precisa ficar FORA de /milim/: esse caminho esta registrado no
+  Android como endereco do aplicativo, entao abrir /milim/ de dentro do jogo
+  devolve a pessoa para o lobby, como se o botao estivesse quebrado.
+-->
 <style>
   body {
     margin: 0;
@@ -12,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 14px;
     background: #121213;
     color: #fff;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -20,14 +26,53 @@
     padding: 24px;
   }
   h1 { font-size: 34px; letter-spacing: 2px; margin: 0; }
-  p { color: #9c9c9e; margin: 0; }
-  a { color: #538d4e; font-weight: 700; font-size: 18px; }
+  p { color: #9c9c9e; margin: 0; max-width: 30rem; line-height: 1.5; }
+  a.link { color: #538d4e; font-weight: 700; font-size: 18px; }
+  a.baixar {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 16px 30px;
+    border-radius: 14px;
+    background: #538d4e;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  a.baixar[hidden] { display: none; }
+  .miudo { font-size: 14px; }
 </style>
 </head>
 <body>
   <h1>LIPPE GAMES</h1>
   <p>jogos feitos em casa</p>
-  <p><a href="./milim/">Milim &middot; jogo de descobrir palavras</a></p>
-  <p><a href="./sarrafo/">Sarrafo &middot; arena de 20 lutadores</a></p>
+  <p><a class="link" href="./milim/">Milim &middot; jogo de descobrir palavras</a></p>
+
+  <a class="baixar" id="baixar" hidden>BAIXAR O MILIM</a>
+  <p class="miudo" id="recado">
+    O jogo ainda nao chegou na Play Store, entao o download vem daqui mesmo.
+    Depois de baixar, toque no arquivo e aceite instalar &mdash; o Android
+    pergunta porque o aplicativo nao veio da loja.
+  </p>
+
+<script>
+  // O botao sai do mesmo arquivo que o jogo le para saber se ha versao nova,
+  // entao os dois nunca discordam. Sem isso, o endereco do APK ficaria escrito
+  // em dois lugares e um deles envelheceria.
+  fetch('./milim/versao.json', { cache: 'no-store' })
+    .then(function (r) { return r.json(); })
+    .then(function (dados) {
+      if (!dados || !dados.apk) return;
+
+      var botao = document.getElementById('baixar');
+      botao.href = dados.apk;
+      botao.textContent = 'BAIXAR O MILIM ' + (dados.versao || '');
+      botao.hidden = false;
+    })
+    .catch(function () {
+      document.getElementById('recado').textContent =
+        'Nao consegui achar o arquivo agora. Tente daqui a pouco.';
+    });
+</script>
 </body>
 </html>
