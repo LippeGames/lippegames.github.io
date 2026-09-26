@@ -1,6 +1,6 @@
 {
-  "versao": "1.5",
+  "versao": "1.6",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v1.5/Milim.apk",
-  "novidades": "O botao de baixar a atualizacao estava abrindo o proprio jogo em vez do navegador. Agora ele baixa o arquivo direto."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v1.6/Milim.apk",
+  "novidades": "O jogo ganhou o icone de verdade, no lugar do provisorio."
 }
