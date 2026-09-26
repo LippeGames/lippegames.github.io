@@ -1,6 +1,6 @@
 {
-  "versao": "1.6",
+  "versao": "1.7",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v1.6/Milim.apk",
-  "novidades": "O jogo ganhou o icone de verdade, no lugar do provisorio."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v1.7/Milim.apk",
+  "novidades": "A abertura e o lobby agora enchem a tela inteira nos celulares compridos, em vez de deixar tarja preta em cima e embaixo."
 }
