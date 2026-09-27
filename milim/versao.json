@@ -1,6 +1,6 @@
 {
-  "versao": "2.6",
+  "versao": "2.7",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v2.6/Milim.apk",
-  "novidades": "A imagem enche a tela inteira, sem faixa preta em cima. O teclado nao tapa mais o campo que voce esta digitando. Da para entrar na sala pelo nome dela, alem do codigo, e a senha pode ter de 4 a 8 letras."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v2.7/Milim.apk",
+  "novidades": "Conserto da abertura, que na 2.6 apareceu com um zoom enorme e o titulo cortado."
 }
