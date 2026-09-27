@@ -1,6 +1,6 @@
 {
-  "versao": "3.0",
+  "versao": "3.1",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.0/Milim.apk",
-  "novidades": "As telas ganharam arte: ajustes, rankings, escolher avatar, como se joga e o placar do fim da batalha, que e tela nova. O como se joga agora explica as tres cores. O grupo de amigos foi aposentado - as salas de batalha fazem o mesmo papel."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.1/Milim.apk",
+  "novidades": "Os Rankings ganharam um ranking para cada modo de batalha - todos contra todos, revezamento e duplas - com vitorias, partidas, media de tentativas, melhor posicao e maior pontuacao."
 }
