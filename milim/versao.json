@@ -1,6 +1,6 @@
 {
-  "versao": "2.8",
+  "versao": "2.9",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v2.8/Milim.apk",
-  "novidades": "A partida comeca de verdade: contagem de 5 segundos quando todo mundo aceita, sem precisar encher a sala. A sala com senha voltou a aparecer na lista e na busca por nome, e os recados de erro ficaram grandes e legiveis."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v2.9/Milim.apk",
+  "novidades": "Entrar pelo nome da sala agora leva a senha junto. O teclado nao tapa mais o campo. A contagem de 5 segundos aparece de verdade. As palavras da batalha sao sempre de 5 letras, e a sala que esvazia encerra a partida com o placar."
 }
