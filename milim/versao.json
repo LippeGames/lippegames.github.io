@@ -1,6 +1,6 @@
 {
-  "versao": "2.9",
+  "versao": "3.0",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v2.9/Milim.apk",
-  "novidades": "Entrar pelo nome da sala agora leva a senha junto. O teclado nao tapa mais o campo. A contagem de 5 segundos aparece de verdade. As palavras da batalha sao sempre de 5 letras, e a sala que esvazia encerra a partida com o placar."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.0/Milim.apk",
+  "novidades": "As telas ganharam arte: ajustes, rankings, escolher avatar, como se joga e o placar do fim da batalha, que e tela nova. O como se joga agora explica as tres cores. O grupo de amigos foi aposentado - as salas de batalha fazem o mesmo papel."
 }
