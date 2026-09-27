@@ -1,6 +1,6 @@
 {
-  "versao": "2.5",
+  "versao": "2.6",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v2.5/Milim.apk",
-  "novidades": "Jogar em equipe agora abre a sala de jogos: criar sala, entrar por codigo e a lista de salas publicas, nos servidores da Unity. Tres modos: todos contra todos, duplas e revezamento."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v2.6/Milim.apk",
+  "novidades": "A imagem enche a tela inteira, sem faixa preta em cima. O teclado nao tapa mais o campo que voce esta digitando. Da para entrar na sala pelo nome dela, alem do codigo, e a senha pode ter de 4 a 8 letras."
 }
