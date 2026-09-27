@@ -1,6 +1,6 @@
 {
-  "versao": "1.7",
+  "versao": "1.8",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v1.7/Milim.apk",
-  "novidades": "A abertura e o lobby agora enchem a tela inteira nos celulares compridos, em vez de deixar tarja preta em cima e embaixo."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v1.8/Milim.apk",
+  "novidades": "A conta dos pontos aparece aberta no fim da partida, e o bonus de vitorias seguidas nunca mais paga o mesmo que uma tentativa a menos."
 }
