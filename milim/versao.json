@@ -1,6 +1,6 @@
 {
-  "versao": "3.4",
+  "versao": "3.5",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.4/Milim.apk",
-  "novidades": "A plaquinha do nome ficou azul em vez de preta, o botao de voltar e o mesmo em todas as telas, e o quadro dos creditos parou de comer a propria moldura."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.5/Milim.apk",
+  "novidades": "As batalhas com amigos agora vao de duas a dez duplas - as equipes que a sala nao tem aparecem apagadas. A mesma palavra nao pode mais ser tentada duas vezes na mesma partida. E a palavra do dia e a da semana nao oferecem mais 'jogar de novo': valem uma chance, e agora a conta dos pontos em dobro aparece por escrito."
 }
