@@ -1,6 +1,6 @@
 {
-  "versao": "3.5",
+  "versao": "3.6",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.5/Milim.apk",
-  "novidades": "As batalhas com amigos agora vao de duas a dez duplas - as equipes que a sala nao tem aparecem apagadas. A mesma palavra nao pode mais ser tentada duas vezes na mesma partida. E a palavra do dia e a da semana nao oferecem mais 'jogar de novo': valem uma chance, e agora a conta dos pontos em dobro aparece por escrito."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.6/Milim.apk",
+  "novidades": "Nas batalhas com amigos, quem acerta primeiro encerra a palavra para todos: o teclado trava, a palavra aparece na tela e a proxima comeca cinco segundos depois, junto para todo mundo. A sala vazia fecha sozinha e some da lista, e a lista passou a mostrar os tres modos de uma vez - salas de duplas nao apareciam para ninguem. O botao de voltar ficou igual em todas as telas, e o lobby agora diz Jogar com Amigos."
 }
