@@ -1,6 +1,6 @@
 {
-  "versao": "3.7",
+  "versao": "3.8",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.7/Milim.apk",
-  "novidades": "Versao de arrumar a casa, depois de uma revisao do projeto inteiro. Duplas e Revezamento passaram a funcionar de verdade - a equipe escolhida na sala nunca chegava na batalha, e o placar das equipes marcava zero a zero do comeco ao fim. Os avisos e o botao Aceitar nao saem mais da tela em celular que nao e 9:20. A engrenagem parou de tirar voce da sala dos amigos. E o link do resultado da palavra da semana nao entrega mais a resposta."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.8/Milim.apk",
+  "novidades": "A tela parou de tremer enquanto voce digita o nome ou a senha da sala. Duas pessoas ja bastam para comecar, em qualquer modo - a sala e convite, nao exigencia -, e quem fica sozinho na equipe joga as seis tentativas. A arte voltou a cobrir a tela inteira nos celulares de hoje: agora cada tela sabe quanto do rodape dela e so decoracao. E o quadro dos creditos entrou dentro da moldura."
 }
