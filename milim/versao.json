@@ -1,6 +1,6 @@
 {
-  "versao": "3.6",
+  "versao": "3.7",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.6/Milim.apk",
-  "novidades": "Nas batalhas com amigos, quem acerta primeiro encerra a palavra para todos: o teclado trava, a palavra aparece na tela e a proxima comeca cinco segundos depois, junto para todo mundo. A sala vazia fecha sozinha e some da lista, e a lista passou a mostrar os tres modos de uma vez - salas de duplas nao apareciam para ninguem. O botao de voltar ficou igual em todas as telas, e o lobby agora diz Jogar com Amigos."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.7/Milim.apk",
+  "novidades": "Versao de arrumar a casa, depois de uma revisao do projeto inteiro. Duplas e Revezamento passaram a funcionar de verdade - a equipe escolhida na sala nunca chegava na batalha, e o placar das equipes marcava zero a zero do comeco ao fim. Os avisos e o botao Aceitar nao saem mais da tela em celular que nao e 9:20. A engrenagem parou de tirar voce da sala dos amigos. E o link do resultado da palavra da semana nao entrega mais a resposta."
 }
