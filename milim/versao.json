@@ -1,6 +1,6 @@
 {
-  "versao": "3.8",
+  "versao": "3.9",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.8/Milim.apk",
-  "novidades": "A tela parou de tremer enquanto voce digita o nome ou a senha da sala. Duas pessoas ja bastam para comecar, em qualquer modo - a sala e convite, nao exigencia -, e quem fica sozinho na equipe joga as seis tentativas. A arte voltou a cobrir a tela inteira nos celulares de hoje: agora cada tela sabe quanto do rodape dela e so decoracao. E o quadro dos creditos entrou dentro da moldura."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.9/Milim.apk",
+  "novidades": "Nos Ajustes, as tarjas de ligar e desligar deixaram de ser um retangulo desenhado por cima: ligadas, o que aparece e o desenho da propria arte, com o degrade e o iconezinho. E o jogo ja sabe procurar artes largas para tablet - elas entram uma de cada vez, sem quebrar nada."
 }
