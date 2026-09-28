@@ -1,6 +1,6 @@
 {
-  "versao": "4.1",
+  "versao": "4.2",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v4.1/Milim.apk",
-  "novidades": "As catorze telas do jogo agora tem desenho de tablet - inclusive o lobby, a abertura e os ajustes. Em tablet a arte cobre a tela inteira, sem tarja nenhuma. Em celular nada muda."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v4.2/Milim.apk",
+  "novidades": "O fim das partidas de Jogar ganhou tela desenhada: uma para quem acerta e outra para quem nao acerta, em celular e em tablet. A palavra, o significado e a conta dos pontos aparecem nos lugares que o desenho deixou."
 }
