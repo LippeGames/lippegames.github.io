@@ -1,6 +1,6 @@
 {
-  "versao": "3.9",
+  "versao": "4.0",
   "pagina": "https://lippegames.github.io/",
-  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v3.9/Milim.apk",
-  "novidades": "Nos Ajustes, as tarjas de ligar e desligar deixaram de ser um retangulo desenhado por cima: ligadas, o que aparece e o desenho da propria arte, com o degrade e o iconezinho. E o jogo ja sabe procurar artes largas para tablet - elas entram uma de cada vez, sem quebrar nada."
+  "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v4.0/Milim.apk",
+  "novidades": "O Milim ganhou telas proprias para tablet: onze delas agora tem um desenho largo, que cobre a tela inteira sem tarja nenhuma. Em celular nada muda."
 }
