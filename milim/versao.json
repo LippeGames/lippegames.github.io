@@ -2,5 +2,7 @@
   "versao": "4.2",
   "pagina": "https://lippegames.github.io/",
   "apk": "https://github.com/LippeGames/lippegames.github.io/releases/download/v4.2/Milim.apk",
-  "novidades": "O fim das partidas de Jogar ganhou tela desenhada: uma para quem acerta e outra para quem nao acerta, em celular e em tablet. A palavra, o significado e a conta dos pontos aparecem nos lugares que o desenho deixou."
+  "novidades": "O fim das partidas de Jogar ganhou tela desenhada: uma para quem acerta e outra para quem nao acerta, em celular e em tablet. A palavra, o significado e a conta dos pontos aparecem nos lugares que o desenho deixou.",
+  "anuncios": false,
+  "anunciosACadaQuantasPartidas": 3
 }
