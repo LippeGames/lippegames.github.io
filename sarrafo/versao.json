@@ -1,5 +1,5 @@
 {
-    "versao": "0.14",
+    "versao": "0.15",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "A espada do JOGADOR agora acende com a runa (so a dos bots acendia). Matar com fogo credita quem ateou, mesmo que ele ja tenha morrido. O campo de visao da camera e a cor do gelo passam a vir de um lugar so. Menos trabalho por quadro no celular: barras, atributos do HUD e fisica."
+    "novidades": "O brilho (bloom) agora funciona de verdade: runas, espada em chamas, gelo e borda da arena acendem. A luz da arena foi reafinada para isso. A espada risca um rastro no ar ao golpear. Os bots e a dificuldade agora se ajustam num lugar so."
 }
