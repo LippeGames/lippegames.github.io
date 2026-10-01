@@ -1,5 +1,5 @@
 {
-    "versao": "0.13",
+    "versao": "0.14",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "Matar com a queimadura do Fogo agora da o abate e o nivel a quem ateou o fogo."
+    "novidades": "A espada do JOGADOR agora acende com a runa (so a dos bots acendia). Matar com fogo credita quem ateou, mesmo que ele ja tenha morrido. O campo de visao da camera e a cor do gelo passam a vir de um lugar so. Menos trabalho por quadro no celular: barras, atributos do HUD e fisica."
 }
