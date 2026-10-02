@@ -1,5 +1,5 @@
 {
-    "versao": "0.15",
+    "versao": "0.16",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "O brilho (bloom) agora funciona de verdade: runas, espada em chamas, gelo e borda da arena acendem. A luz da arena foi reafinada para isso. A espada risca um rastro no ar ao golpear. Os bots e a dificuldade agora se ajustam num lugar so."
+    "novidades": "Runa de Fogo: quando dispara, cai um meteoro em quem apanhou, com metade do dano na hora e o numero grande e laranja na tela. A outra metade continua queimando. Sem o circulo no chao embaixo de quem pega runa: a espada ja mostra a runa."
 }
