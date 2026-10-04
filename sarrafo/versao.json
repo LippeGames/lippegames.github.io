@@ -1,5 +1,5 @@
 {
-    "versao": "0.24",
+    "versao": "0.25",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "Dois jogadores apertando INICIAR quase juntos agora caem na MESMA partida (antes cada um criava a sua). E uma linha embaixo da tela diz se a partida e ONLINE e com quantas pessoas, ou CONTRA BOTS e por que."
+    "novidades": "Conserto da partida online: o tablet que fechava sozinho ao procurar partida, e os dois jogadores que nao se achavam. A versao aparece grande no lobby. Se o jogo fechar sozinho, o lobby mostra onde parou (tire uma foto)."
 }
