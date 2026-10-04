@@ -1,5 +1,5 @@
 {
-    "versao": "0.22",
+    "versao": "0.23",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "A tacada do Sarrafo conta o abate e da o nivel na hora, em vez de so quando o corpo caia la embaixo. Runa de Vento: +10% de velocidade (era 5%)."
+    "novidades": "MULTIPLAYER! Ao tocar em INICIAR o jogo procura uma partida ja criada e voce entra no lugar de um bot; sem sala livre, cria a sua e os outros entram nela. Sem internet, a partida e contra os bots, como antes."
 }
