@@ -1,5 +1,5 @@
 {
-    "versao": "0.25",
+    "versao": "0.26",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "Conserto da partida online: o tablet que fechava sozinho ao procurar partida, e os dois jogadores que nao se achavam. A versao aparece grande no lobby. Se o jogo fechar sozinho, o lobby mostra onde parou (tire uma foto)."
+    "novidades": "Conserto para tablets e celulares que fechavam ao abrir a arena: o jogo passa a desenhar com OpenGL ES em vez de Vulkan. O registro de bordo anota mais passos."
 }
