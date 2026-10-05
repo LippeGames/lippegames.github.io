@@ -1,5 +1,5 @@
 {
-    "versao": "0.26",
+    "versao": "0.27",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "Conserto para tablets e celulares que fechavam ao abrir a arena: o jogo passa a desenhar com OpenGL ES em vez de Vulkan. O registro de bordo anota mais passos."
+    "novidades": "Aparelhos que fechavam ao abrir a arena: o jogo percebe e, na vez seguinte, usa graficos mais leves (ate tres degraus). Se fechar, abra de novo e tente outra vez."
 }
