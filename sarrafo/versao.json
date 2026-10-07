@@ -1,5 +1,5 @@
 {
-    "versao": "0.29",
+    "versao": "0.30",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "Conserto para aparelhos que fechavam ao abrir a arena: agora o jogo desenha mesmo com OpenGL ES (na 0.26 a troca nao tinha entrado no APK)."
+    "novidades": "ATENCAO: desinstale o Sarrafo antes de instalar esta versao (so desta vez). O jogo passou a ter assinatura propria, a mesma que vai para a Play Store; o celular recusa instalar por cima da antiga. O gold e o nome comecam do zero."
 }
