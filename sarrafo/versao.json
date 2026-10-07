@@ -1,5 +1,5 @@
 {
-    "versao": "0.28",
+    "versao": "0.29",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "Runas novas! Fogo, Gelo, Terra, Vento e Natureza ganharam arte de verdade, flutuando na arena e como selos no HUD."
+    "novidades": "Conserto para aparelhos que fechavam ao abrir a arena: agora o jogo desenha mesmo com OpenGL ES (na 0.26 a troca nao tinha entrado no APK)."
 }
