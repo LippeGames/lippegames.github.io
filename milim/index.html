@@ -183,11 +183,10 @@
   <div class="caixa">
     <h2>Ainda nao tem o jogo?</h2>
     <a id="baixar" class="botao secundario"
-       href="https://github.com/LippeGames/lippegames.github.io/releases">
-       BAIXAR O MILIM</a>
-    <p>O jogo ainda nao chegou na Play Store, entao o download vem daqui mesmo.
-       Depois de baixar, toque no arquivo e aceite instalar - o Android pergunta
-       porque o aplicativo nao veio da loja.</p>
+       href="https://play.google.com/store/apps/details?id=com.lippegames.milim">
+       BAIXAR NA GOOGLE PLAY</a>
+    <p>O Milim esta na Google Play. Depois de instalar, volte a esta conversa e
+       toque no link do desafio de novo.</p>
   </div>
 
   <footer>Milim &middot; jogo de palavras em portugues</footer>
@@ -195,21 +194,10 @@
 
 <script>
 (function () {
-  // O botao de baixar sai do arquivo de versao, e nao de um endereco escrito
-  // aqui. Este site guarda os lancamentos de mais de um jogo, entao o atalho
-  // "releases/latest" nao serve: o mais recente pode ser de outro jogo, e o
-  // link quebra sem ninguem perceber. O versao.json sempre aponta para o APK
-  // certo desta versao.
-  fetch('versao.json', { cache: 'no-store' })
-    .then(function (r) { return r.ok ? r.json() : null; })
-    .then(function (dados) {
-      if (!dados) return;
+  // O botao de baixar leva a Google Play (desde a 4.7): o APK do site era
+  // de uma versao velha, que nem jogava com a da loja e nao se atualizava
+  // por ela.
 
-      var botao = document.getElementById('baixar');
-      if (dados.apk) botao.href = dados.apk;
-      if (dados.versao) botao.textContent = 'BAIXAR O MILIM ' + dados.versao;
-    })
-    .catch(function () { /* sem o arquivo, o botao leva para a lista de versoes */ });
 
   // O codigo so tem letras de A a Z. Limpar antes de usar evita que qualquer
   // coisa colada no endereco vire parte do link do aplicativo.
