@@ -1,7 +1,7 @@
 {
-    "versao": "0.33",
+    "versao": "0.34",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "LOJA no lobby: gaste o gold das partidas em retratos, cor da espada e efeito de abate (a espada e o efeito aparecem para todos na sala). Toque no botao LOJA ou no seu gold.",
+    "novidades": "Guardian novo, com textura e o corte de espada de verdade. Capa nova. Molduras na loja (Rubi, Esmeralda e Real). No tablet, capa, lobby e fim de partida enchem a tela. Sem as colunas em volta da arena. Conserto de um fechamento no tablet.",
     "anuncios": true,
     "anunciosACadaQuantasPartidas": 3
 }
