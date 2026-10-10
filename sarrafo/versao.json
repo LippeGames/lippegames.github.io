@@ -1,5 +1,7 @@
 {
-    "versao": "0.32",
+    "versao": "0.33",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "Arena nova: chao de pedra, anel, borda e o ceu com ilhas em volta. Lobby, paineis e HUD com arte: moldura na barra de vida, icones, coroa do lider, medalhas e tela de fim. Icone novo, que no tablet ocupa o espaco inteiro."
+    "novidades": "LOJA no lobby: gaste o gold das partidas em retratos, cor da espada e efeito de abate (a espada e o efeito aparecem para todos na sala). Toque no botao LOJA ou no seu gold.",
+    "anuncios": true,
+    "anunciosACadaQuantasPartidas": 3
 }
