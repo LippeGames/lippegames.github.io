@@ -1,7 +1,7 @@
 {
-    "versao": "0.34",
+    "versao": "0.35",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "Guardian novo, com textura e o corte de espada de verdade. Capa nova. Molduras na loja (Rubi, Esmeralda e Real). No tablet, capa, lobby e fim de partida enchem a tela. Sem as colunas em volta da arena. Conserto de um fechamento no tablet.",
+    "novidades": "O Guardian anda sem deslizar. O Xablau e o Sarrafo alcancam 50% mais longe. INICIAR procura partida por poucos segundos e, nao achando, abre a sua sala com bots. Loja de Safo Coins e Premium sem anuncios (as compras funcionam quando o jogo estiver na Play Store).",
     "anuncios": true,
     "anunciosACadaQuantasPartidas": 3
 }
