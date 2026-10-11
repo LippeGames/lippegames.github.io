@@ -1,7 +1,7 @@
 {
-    "versao": "0.35",
+    "versao": "0.36",
     "pagina": "https://lippegames.github.io/sarrafo/",
-    "novidades": "O Guardian anda sem deslizar. O Xablau e o Sarrafo alcancam 50% mais longe. INICIAR procura partida por poucos segundos e, nao achando, abre a sua sala com bots. Loja de Safo Coins e Premium sem anuncios (as compras funcionam quando o jogo estiver na Play Store).",
+    "novidades": "Chegaram o Premium (sem anúncios) e o Premium Plus (sem anúncios e seis retratos exclusivos: Aurora, Raijin, Selene, Ignis, Nyx e Orion). O resto da loja continua no gold.",
     "anuncios": true,
     "anunciosACadaQuantasPartidas": 3
 }
