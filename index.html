@@ -3,76 +3,140 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lippe Games</title>
+<title>Lippe Studios</title>
+<meta name="description" content="Os jogos da Lippe Studios: Milim, Sarrafo e os próximos.">
 <!--
-  Esta pagina e tambem para onde o proprio jogo manda quem toca em BAIXAR
-  AGORA. Ela precisa ficar FORA de /milim/: esse caminho esta registrado no
-  Android como endereco do aplicativo, entao abrir /milim/ de dentro do jogo
-  devolve a pessoa para o lobby, como se o botao estivesse quebrado.
+  A vitrine da Lippe Studios (13/10/2026): um cartao por jogo.
+  E o endereco que vai no campo "Website" da ficha da Google Play, entao quem
+  abrir por la ve todos os jogos.
+  Ela fica FORA de /milim/: esse caminho esta registrado no Android como
+  endereco do jogo, e abri-lo com o Milim instalado leva para dentro do jogo.
+  Jogo novo: copiar um <article class="jogo"> e trocar os textos e o link.
 -->
 <style>
+  :root {
+    --fundo: #121213;
+    --caixa: #1c1c1f;
+    --contorno: #2e2e32;
+    --texto: #ffffff;
+    --fraco: #9c9c9e;
+    --verde: #538d4e;
+    --dourado: #f2cc4d;
+  }
+  * { box-sizing: border-box; }
   body {
     margin: 0;
     min-height: 100vh;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: 40px 16px 56px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 14px;
-    background: #121213;
-    color: #fff;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    text-align: center;
-    padding: 24px;
   }
-  h1 { font-size: 34px; letter-spacing: 2px; margin: 0; }
-  p { color: #9c9c9e; margin: 0; max-width: 30rem; line-height: 1.5; }
-  a.link { color: #538d4e; font-weight: 700; font-size: 18px; }
-  a.baixar {
+  header { text-align: center; margin-bottom: 32px; }
+  h1 { font-size: 34px; letter-spacing: 3px; margin: 0 0 6px; }
+  header p { color: var(--fraco); margin: 0; }
+  main {
+    width: 100%;
+    max-width: 720px;
+    display: grid;
+    gap: 16px;
+  }
+  .jogo {
+    background: var(--caixa);
+    border: 1px solid var(--contorno);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+  .icone {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+    flex: none;
+    object-fit: cover;
+  }
+  .icone.texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    background: #2a2a2e;
+    color: var(--dourado);
+  }
+  .sobre { flex: 1; min-width: 0; }
+  .sobre h2 { margin: 0 0 4px; font-size: 22px; }
+  .sobre p { margin: 0 0 12px; color: var(--fraco); line-height: 1.45; }
+  .botoes { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+  .loja {
     display: inline-block;
-    margin-top: 10px;
-    padding: 16px 30px;
-    border-radius: 14px;
-    background: #538d4e;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: var(--verde);
     color: #fff;
-    font-size: 20px;
     font-weight: 700;
     text-decoration: none;
   }
-  a.baixar[hidden] { display: none; }
-  .miudo { font-size: 14px; }
+  .breve {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 1px solid var(--contorno);
+    color: var(--fraco);
+    font-weight: 700;
+  }
+  .miudo { color: var(--fraco); font-size: 14px; }
+  .miudo a { color: var(--fraco); }
+  footer { margin-top: 36px; text-align: center; color: var(--fraco); font-size: 14px; line-height: 1.6; }
+  footer a { color: var(--verde); }
+  @media (max-width: 480px) {
+    .jogo { flex-direction: column; text-align: center; }
+    .botoes { justify-content: center; }
+  }
 </style>
 </head>
 <body>
-  <h1>LIPPE GAMES</h1>
-  <p>jogos feitos em casa</p>
-  <p><a class="link" href="./milim/">Milim &middot; jogo de descobrir palavras</a></p>
+  <header>
+    <h1>LIPPE STUDIOS</h1>
+    <p>jogos feitos em casa</p>
+  </header>
 
-  <a class="baixar" id="baixar" hidden>BAIXAR O MILIM</a>
-  <p class="miudo" id="recado">
-    O jogo ainda nao chegou na Play Store, entao o download vem daqui mesmo.
-    Depois de baixar, toque no arquivo e aceite instalar &mdash; o Android
-    pergunta porque o aplicativo nao veio da loja.
-  </p>
+  <main>
+    <article class="jogo">
+      <img class="icone" src="milim/icone.png" alt="Ícone do Milim">
+      <div class="sobre">
+        <h2>Milim</h2>
+        <p>Descubra a palavra de 5 letras em 6 tentativas. Palavra do dia, palavra
+        da semana, partidas rápidas e batalhas com os amigos.</p>
+        <div class="botoes">
+          <a class="loja" href="https://play.google.com/store/apps/details?id=com.lippegames.milim">Baixar na Google Play</a>
+          <span class="miudo"><a href="milim/privacidade.html">Privacidade</a> ·
+          <a href="milim/excluir-dados.html">Excluir dados</a></span>
+        </div>
+      </div>
+    </article>
 
-<script>
-  // O botao sai do mesmo arquivo que o jogo le para saber se ha versao nova,
-  // entao os dois nunca discordam. Sem isso, o endereco do APK ficaria escrito
-  // em dois lugares e um deles envelheceria.
-  fetch('./milim/versao.json', { cache: 'no-store' })
-    .then(function (r) { return r.json(); })
-    .then(function (dados) {
-      if (!dados || !dados.apk) return;
+    <article class="jogo">
+      <div class="icone texto" aria-hidden="true">S</div>
+      <div class="sobre">
+        <h2>Sarrafo</h2>
+        <p>Arena de 20 lutadores.</p>
+        <div class="botoes">
+          <span class="breve">Em breve na Google Play</span>
+          <span class="miudo"><a href="sarrafo/privacidade.html">Privacidade</a></span>
+        </div>
+      </div>
+    </article>
+  </main>
 
-      var botao = document.getElementById('baixar');
-      botao.href = dados.apk;
-      botao.textContent = 'BAIXAR O MILIM ' + (dados.versao || '');
-      botao.hidden = false;
-    })
-    .catch(function () {
-      document.getElementById('recado').textContent =
-        'Nao consegui achar o arquivo agora. Tente daqui a pouco.';
-    });
-</script>
+  <footer>
+    Contato: <a href="mailto:lippestudios@gmail.com">lippestudios@gmail.com</a><br>
+    Lippe Studios
+  </footer>
 </body>
 </html>
