@@ -150,7 +150,7 @@
 <body>
 <main>
   <h1>MILIM</h1>
-  <p class="subtitulo">jogo de descobrir palavras</p>
+  <p class="subtitulo" id="t-sub">jogo de descobrir palavras</p>
 
   <div class="quadrados" aria-hidden="true">
     <span class="certo"></span>
@@ -161,35 +161,35 @@
   </div>
 
   <div id="com-desafio" class="escondido">
-    <p class="chamada">Um amigo te desafiou a descobrir a palavra dele.</p>
+    <p class="chamada" id="t-chamada">Um amigo te desafiou a descobrir a palavra dele.</p>
 
     <a id="abrir" class="botao" href="#">ABRIR NO MILIM</a>
 
     <div class="caixa">
-      <h2>Ou cole este codigo no jogo</h2>
+      <h2 id="t-cole">Ou cole este codigo no jogo</h2>
       <p class="codigo" id="codigo"></p>
-      <p>Abra o Milim, toque em JOGAR e cole o codigo em DESAFIO DE UM AMIGO.</p>
+      <p id="t-como">Abra o Milim, toque em JOGAR e cole o codigo em DESAFIO DE UM AMIGO.</p>
     </div>
   </div>
 
   <div id="sem-desafio" class="escondido">
-    <p class="chamada">Este link nao trouxe nenhum desafio.</p>
+    <p class="chamada" id="t-sem">Este link nao trouxe nenhum desafio.</p>
     <div class="caixa">
-      <p>Peca para o seu amigo mandar o link de novo, inteiro. O WhatsApp as
+      <p id="t-peca">Peca para o seu amigo mandar o link de novo, inteiro. O WhatsApp as
          vezes corta o endereco quando ele vem junto com outro texto.</p>
     </div>
   </div>
 
   <div class="caixa">
-    <h2>Ainda nao tem o jogo?</h2>
+    <h2 id="t-ainda">Ainda nao tem o jogo?</h2>
     <a id="baixar" class="botao secundario"
        href="https://play.google.com/store/apps/details?id=com.lippegames.milim">
        BAIXAR NA GOOGLE PLAY</a>
-    <p>O Milim esta na Google Play. Depois de instalar, volte a esta conversa e
+    <p id="t-depois">O Milim esta na Google Play. Depois de instalar, volte a esta conversa e
        toque no link do desafio de novo.</p>
   </div>
 
-  <footer>Milim &middot; jogo de palavras em portugues</footer>
+  <footer id="t-rodape">Milim &middot; jogo de palavras em portugues e ingles</footer>
 </main>
 
 <script>
@@ -204,6 +204,31 @@
   var parametros = new URLSearchParams(window.location.search);
   var codigo = (parametros.get('d') || '').toUpperCase().replace(/[^A-Z]/g, '');
 
+  // O IDIOMA DO DESAFIO VAI JUNTO (17/10/2026). O link de um desafio em
+  // ingles traz "&i=en"; o atalho milim:// perdia isso, e o jogo achava que
+  // o desafio era em portugues - e nao abria. A pagina tambem fala ingles.
+  var emIngles = (parametros.get('i') || '').toLowerCase() === 'en';
+  if (emIngles) {
+    document.documentElement.lang = 'en';
+    var textos = {
+      't-sub': 'a word-guessing game',
+      't-chamada': 'A friend challenged you to guess their word.',
+      'abrir': 'OPEN IN MILIM',
+      't-cole': 'Or paste this code in the game',
+      't-como': 'Open Milim, tap PLAY and paste the code in FRIEND CHALLENGE.',
+      't-sem': 'This link has no challenge.',
+      't-peca': 'Ask your friend to send the link again, in full. WhatsApp sometimes cuts the address when it comes with other text.',
+      't-ainda': "Don't have the game yet?",
+      'baixar': 'GET IT ON GOOGLE PLAY',
+      't-depois': 'Milim is on Google Play. After installing it, come back to this chat and tap the challenge link again.',
+      't-rodape': 'Milim \u00b7 a word game in English and Portuguese'
+    };
+    for (var id in textos) {
+      var elemento = document.getElementById(id);
+      if (elemento) elemento.textContent = textos[id];
+    }
+  }
+
   var comDesafio = document.getElementById('com-desafio');
   var semDesafio = document.getElementById('sem-desafio');
 
@@ -212,7 +237,7 @@
     return;
   }
 
-  var atalho = 'milim://d/' + codigo;
+  var atalho = 'milim://d/' + codigo + (emIngles ? '?i=en' : '');
 
   document.getElementById('codigo').textContent = 'MILIM-' + codigo;
   document.getElementById('abrir').href = atalho;
