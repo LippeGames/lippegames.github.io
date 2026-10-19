@@ -189,7 +189,7 @@
        toque no link do desafio de novo.</p>
   </div>
 
-  <footer id="t-rodape">Milim &middot; jogo de palavras em portugues e ingles</footer>
+  <footer id="t-rodape">Milim &middot; jogo de palavras em portugues, ingles e espanhol</footer>
 </main>
 
 <script>
@@ -199,15 +199,42 @@
   // por ela.
 
 
-  // O codigo so tem letras de A a Z. Limpar antes de usar evita que qualquer
+  // O codigo tem letras de A a Z e, nas palavras em espanhol com N de til,
+  // um numero no fim (19/10/2026). Limpar antes de usar evita que qualquer
   // coisa colada no endereco vire parte do link do aplicativo.
   var parametros = new URLSearchParams(window.location.search);
-  var codigo = (parametros.get('d') || '').toUpperCase().replace(/[^A-Z]/g, '');
+  var bruto = (parametros.get('d') || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+  var letras = (bruto.match(/^[A-Z]+/) || [''])[0];
+  var numero = (bruto.substring(letras.length).match(/^[1-9][0-9]{0,2}/) || [''])[0];
+  var codigo = letras ? letras + numero : '';
 
   // O IDIOMA DO DESAFIO VAI JUNTO (17/10/2026). O link de um desafio em
   // ingles traz "&i=en"; o atalho milim:// perdia isso, e o jogo achava que
   // o desafio era em portugues - e nao abria. A pagina tambem fala ingles.
-  var emIngles = (parametros.get('i') || '').toLowerCase() === 'en';
+  // O espanhol (19/10/2026) vai pelo mesmo caminho, com "&i=es".
+  var lingua = (parametros.get('i') || '').toLowerCase();
+  if (lingua !== 'en' && lingua !== 'es') lingua = '';
+  var emIngles = lingua === 'en';
+  if (lingua === 'es') {
+    document.documentElement.lang = 'es';
+    var textosEs = {
+      't-sub': 'un juego de adivinar palabras',
+      't-chamada': 'Un amigo te retó a adivinar su palabra.',
+      'abrir': 'ABRIR EN MILIM',
+      't-cole': 'O pega este código en el juego',
+      't-como': 'Abre Milim, toca JUGAR y pega el código en RETO DE UN AMIGO.',
+      't-sem': 'Este enlace no trae ningún reto.',
+      't-peca': 'Pídele a tu amigo que te mande el enlace de nuevo, completo. WhatsApp a veces corta la dirección cuando viene con otro texto.',
+      't-ainda': '¿Aún no tienes el juego?',
+      'baixar': 'DISPONIBLE EN GOOGLE PLAY',
+      't-depois': 'Milim está en Google Play. Después de instalarlo, vuelve a este chat y toca otra vez el enlace del reto.',
+      't-rodape': 'Milim · un juego de palabras en español, inglés y portugués'
+    };
+    for (var idEs in textosEs) {
+      var elementoEs = document.getElementById(idEs);
+      if (elementoEs) elementoEs.textContent = textosEs[idEs];
+    }
+  }
   if (emIngles) {
     document.documentElement.lang = 'en';
     var textos = {
@@ -221,7 +248,7 @@
       't-ainda': "Don't have the game yet?",
       'baixar': 'GET IT ON GOOGLE PLAY',
       't-depois': 'Milim is on Google Play. After installing it, come back to this chat and tap the challenge link again.',
-      't-rodape': 'Milim \u00b7 a word game in English and Portuguese'
+      't-rodape': 'Milim \u00b7 a word game in English, Portuguese and Spanish'
     };
     for (var id in textos) {
       var elemento = document.getElementById(id);
@@ -237,7 +264,7 @@
     return;
   }
 
-  var atalho = 'milim://d/' + codigo + (emIngles ? '?i=en' : '');
+  var atalho = 'milim://d/' + codigo + (lingua ? '?i=' + lingua : '');
 
   document.getElementById('codigo').textContent = 'MILIM-' + codigo;
   document.getElementById('abrir').href = atalho;
