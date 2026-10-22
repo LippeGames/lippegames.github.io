@@ -1,5 +1,6 @@
 # app-ads.txt de lippegames.github.io (Milim e Sarrafo)
 # Vendedores autorizados, copiados do painel da Unity Ads em 08/10/2026.
+# 21/10/2026: + a conta do Google AdMob do Milim (mediacao LevelPlay).
 smaato.com, 1100058938, RESELLER, 07bcf65f187117b4
 smaato.com, 1100047589, RESELLER, 07bcf65f187117b4
 smaato.com, 1100055750, RESELLER, 07bcf65f187117b4
@@ -38,6 +39,7 @@ loopme.com, 9621, RESELLER, 6c8d5f95897a5a3b
 odeeo.io, 118848844, RESELLER, 36cfd73091d5c3fc
 pokkt.com, 6246, RESELLER, c45702d9311e25fd
 unity.com, 149687420, DIRECT, 96cabb5fbdde37a7
+google.com, pub-3226425138687961, DIRECT, f08c47fec0942fa0
 brightcom.com, 23120, RESELLER
 connekt.ai, 5585919044, RESELLER
 pubmatic.com, 160145, RESELLER, 5d62403b186f2ace
