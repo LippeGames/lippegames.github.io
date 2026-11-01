@@ -1,6 +1,13 @@
 {
   "itens": [
     {
+      "tipo": "sugestao",
+      "apelido": "SINDEL E VALEN",
+      "pt": "dá pra jogar de dois? Dá sim! Toque em Jogar com Amigos, crie uma sala e mande o código: cada um joga no seu celular, com a mesma palavra.",
+      "en": "can two people play? Yes! Tap Play with Friends, create a room and send the code: each one plays on their own phone, with the same word.",
+      "es": "¿se puede jugar de a dos? ¡Sí! Toca Jugar con Amigos, crea una sala y manda el código: cada uno juega en su celular, con la misma palabra."
+    },
+    {
       "tipo": "versao",
       "versao": "6.6",
       "pt": "aviso diário da palavra do dia, sequência de dias no lobby, primeira partida guiada, este sino de Novidades e jogo mais leve.",
