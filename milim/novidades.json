@@ -1,6 +1,12 @@
 {
   "itens": [
     {
+      "tipo": "recado",
+      "pt": "Passamos de 1.000 downloads! Obrigado por jogar o Milim e por chamar os amigos para as salas.",
+      "en": "We passed 1,000 downloads! Thank you for playing Milim and for inviting your friends to the rooms.",
+      "es": "¡Pasamos las 1.000 descargas! Gracias por jugar Milim y por invitar a tus amigos a las salas."
+    },
+    {
       "tipo": "sugestao",
       "apelido": "SINDEL E VALEN",
       "pt": "dá pra jogar de dois? Dá sim! Toque em Jogar com Amigos, crie uma sala e mande o código: cada um joga no seu celular, com a mesma palavra.",
