@@ -2,12 +2,14 @@
   "itens": [
     {
       "tipo": "recado",
+      "data": "2026-11-02",
       "pt": "Passamos de 1.000 downloads! Obrigado por jogar o Milim e por chamar os amigos para as salas.",
       "en": "We passed 1,000 downloads! Thank you for playing Milim and for inviting your friends to the rooms.",
       "es": "¡Pasamos las 1.000 descargas! Gracias por jugar Milim y por invitar a tus amigos a las salas."
     },
     {
       "tipo": "sugestao",
+      "data": "2026-11-01",
       "apelido": "SINDEL E VALEN",
       "pt": "dá pra jogar de dois? Dá sim! Toque em Jogar com Amigos, crie uma sala e mande o código: cada um joga no seu celular, com a mesma palavra.",
       "en": "can two people play? Yes! Tap Play with Friends, create a room and send the code: each one plays on their own phone, with the same word.",
@@ -15,6 +17,7 @@
     },
     {
       "tipo": "versao",
+      "data": "2026-11-01",
       "versao": "6.6",
       "pt": "aviso diário da palavra do dia, sequência de dias no lobby, primeira partida guiada, este sino de Novidades e jogo mais leve.",
       "en": "daily word reminder, day streak in the lobby, a guided first game, this What's New bell and a lighter download.",
