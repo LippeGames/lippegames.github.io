@@ -1,6 +1,14 @@
 {
   "itens": [
     {
+      "tipo": "versao",
+      "data": "2026-11-02",
+      "versao": "6.7",
+      "pt": "placar na sala com amigos nos 3 modos, pergunta antes de sair de uma partida, revezamento segue mesmo se o colega sair, e a batalha não mexe mais nas suas marcas do jogo solo.",
+      "en": "a scoreboard in the friends room for all 3 modes, a question before you leave a game, relay mode goes on even if your partner leaves, and battles no longer change your solo stats.",
+      "es": "marcador en la sala con amigos en los 3 modos, pregunta antes de salir de una partida, los relevos siguen aunque tu compañero salga, y la batalla ya no cambia tus marcas del juego individual."
+    },
+    {
       "tipo": "recado",
       "data": "2026-11-02",
       "pt": "Passamos de 1.000 downloads! Obrigado por jogar o Milim e por chamar os amigos para as salas.",
