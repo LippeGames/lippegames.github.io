@@ -2,6 +2,14 @@
   "itens": [
     {
       "tipo": "versao",
+      "data": "2026-11-20",
+      "versao": "6.8",
+      "pt": "Natal no Milim! De 1º de dezembro até o Ano Novo, telas enfeitadas e gorro de Papai Noel no seu avatar. E no dia 25, uma Palavra do Dia especial com duas palavras. Atualize na Play para não perder!",
+      "en": "Christmas in Milim! From December 1 to New Year's, decorated screens and a Santa hat on your avatar. And on the 25th, a special Word of the Day with two words. Update on Google Play so you don't miss it!",
+      "es": "¡Navidad en Milim! Del 1 de diciembre hasta Año Nuevo, pantallas decoradas y gorro de Papá Noel en tu avatar. Y el día 25, una Palabra del Día especial con dos palabras. ¡Actualiza en Google Play para no perdértela!"
+    },
+    {
+      "tipo": "versao",
       "data": "2026-11-02",
       "versao": "6.7",
       "pt": "placar na sala com amigos nos 3 modos, pergunta antes de sair de uma partida, revezamento segue mesmo se o colega sair, e a batalha não mexe mais nas suas marcas do jogo solo.",
